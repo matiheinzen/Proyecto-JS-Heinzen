@@ -1,0 +1,58 @@
+/*------------------inicio------------------*/
+main.inicio{
+    margin: 1% auto;
+    & h1{
+        text-align: center;
+        font-family: $textH1;
+        font-size: 4.5rem;
+        color: $colorH1;
+    }
+    & img{
+        width: 100%;
+        height: 450px;
+    }
+}
+section.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+aside.inicio{
+    .tamanoGifs{
+        display: flex;
+        width: 50%;
+        height: 500px;
+        margin: auto;
+        margin-bottom: 1%;
+    }
+}
+.modal-container {
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(87, 83, 83, 0.586);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    font-family: $textP;
+}
+.my-modal {
+    background-color: $colorNav;
+    border-radius: 10px;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+}
+#input-nombre{
+    text-align: center;
+    font-family: $textP;
+}
+.modal-container-active {
+   display: none;
+}
+/*------------------ fin inicio------------------*/

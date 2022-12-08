@@ -1,0 +1,71 @@
+/*articulos*/
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2%;
+}
+.producto-detalles{
+    background-color: $colorArt;
+    color:$colorText;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    font-family: $textP;
+    box-shadow:5px 5px 5px rgb(41, 39, 39); 
+}
+.producto-imagen{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border:5px;
+}
+.producto-agregar{
+    font-size: 1.5rem;
+    border: 0;
+    background-color:transparent;
+    cursor: pointer;
+}
+.producto-agregar:hover{
+    text-shadow:2px 2px 2px white; 
+    color:#000;
+}
+.subir-section {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 1;
+    & .subir-btn {
+        background-color: $colorText;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        transform: translate(-50%, -50%);
+        & i {
+            position: absolute;
+            font-size: 5.5rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            color: black;
+            transition: 0.5s;
+        }
+    }
+}
+.show {
+    & .subir-btn {
+        animation: subir 0.5s ease-in-out;
+        width: 6rem;
+        height: 6rem;
+        & i {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}   
+/*------------------------------------------------------------------------------*/

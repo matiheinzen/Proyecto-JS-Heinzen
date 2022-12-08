@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formas de contactarse con nosotros">
+    <meta name="keywords" content="LIBRERIA, H, 4, H4, TIENDA, ARTICULOS, ESCOLARES, ARTICULOS DE LIBRERIA, ARTICULOS ESCOLARES, MATIAS HEINZEN, HEINZEN">
+    <title>H4-Contacto</title>
+    <link rel="shortcut icon" href="../Recursos/icono.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mochiy+Pop+One&family=Quicksand:wght@700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/f76be3a348.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../sass/style.css">
+</head>
+<body>
+    <div id="contenedorAmc" class="animate__animated animate__slideInUp">
+        <header class="contacto">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <img src="../Recursos/logo.jpg" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="../paginas/articulos.html">Articulos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link boton-carrito" href="../paginas/carrito.html"><i class="bi bi-cart-fill"></i> Tus elecciones</a></li>
+                      </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main id="h2"class="contacto">
+            <h2>Contactate con nosotros</h2>
+        </main>
+        <section class="contacto">
+            <form id="form" action="https://formspree.io/f/xzbwngod" method="POST">
+                <fieldset id="contactos" class="texContacto">
+                    <legend id="contacto" class="legendaContacto"><i class="fa-regular fa-hand-point-down"></i>CONSULTAS<i class="fa-regular fa-hand-point-down"></i></legend>
+                    <label for="nombre" class="animate__animated animate__lightSpeedInRight"> Nombre y Apellido: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="animate__animated animate__lightSpeedInLeft" required>
+                    <label for="email" class="animate__animated animate__lightSpeedInRight"> Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su email" class="animate__animated animate__lightSpeedInLeft" required>
+                    <label for="tel" class="animate__animated animate__lightSpeedInRight"> Telefono: </label>
+                    <input type="tel" name="tel" id="tel" placeholder="Telefono" class="animate__animated animate__lightSpeedInLeft" required>
+                    <textarea name="text" id="text" cols="70" rows="10"placeholder="Agregar un comentario..." required></textarea>
+                    <div class="btnUno">
+                        <button class="btn--default" type="submit">Enviar Consulta</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <strong>H4 ARTICULOS ESCOLARES</strong>
+            <i class="fa-brands fa-instagram"> H4-libreria</i>
+            <i class="fa-brands fa-facebook"> H4-libreria</i>
+            <i class="fa-brands fa-whatsapp"> 0342-154499754</i>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.421153955832!2d-60.770422685377696!3d-31.677052716077103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a629fed837f7%3A0x526988f4ba87d3d0!2sBalcarce%202339%2C%20S3016%20Santo%20Tom%C3%A9%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1662338209762!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="direccion"></iframe>
+          </footer>
+    </div>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

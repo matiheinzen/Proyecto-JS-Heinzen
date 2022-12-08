@@ -1,0 +1,84 @@
+/*-------------------------------principales, se repiten en todas las paginas------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $fondoCompleto;
+    height: 100vh;
+}
+
+header{
+    font-family: $textP;
+    font-size:1.5rem;
+    width: 100%;
+    & .navbar{
+        margin: 2% 2%;
+        background-color:$colorNav ;
+        box-shadow: 5px  5px 10px $colorText;
+        &  ul li a{
+            text-decoration: none;
+            color: $colorText;
+            text-align: center;
+        }
+        & ul li a:hover{
+            text-shadow:2px 2px 2px white; 
+            color:black;
+        }
+        & img{
+            width: 100px;
+            height: auto;
+        }
+    }
+}
+.boton-categoria{
+    background-color: transparent;
+    border: none;
+    color: $colorText;
+}
+.boton-categoria:hover{
+    text-shadow:2px 2px 2px white; 
+    color:#000;
+}
+footer{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorNav;
+    font-family: $textH2;
+    font-size: 1.25rem;
+    padding: 2% 5%;
+    i{
+    padding: 5px 15px;
+    }
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $textH2;
+    font-size: 2.5rem;
+    margin:3%;
+}
+p{
+    text-align: center;
+    font-size:1.5rem;
+    font-family: $textP;
+    line-height: 2.5rem;
+}
+span{
+    text-shadow:2px 2px 2px white; 
+    color:#000;
+}
+h5{
+    text-align: center;
+    color:$colorText;
+    font-family: $textH2;
+    font-size: 1.25rem;
+}
+/*---------------------------fin principales---------------------*/
+

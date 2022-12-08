@@ -1,0 +1,72 @@
+/*-------------------------contactos-----------------------*/
+section.contacto{
+    width: 80%;
+    height: auto;
+    background-image: url(../Recursos/fondocontacto.jpg);
+    margin:0 auto 2%;
+    border: 3px solid black;
+    border-radius: 100px;
+    font-family: $textP;
+    font-size: 1.25rem;
+    text-align: center;
+    & form fieldset.texContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    & form fieldset legend{
+        background-color: $fondoCompleto;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        border-radius: 100px;
+    }
+    & form fieldset label{
+        background-color: $fondoCompleto;
+        width: auto;
+        height: auto;
+        border-radius: 100px;
+        padding: 5px;
+    }
+    & form fieldset input{
+        text-align: center;
+        border-radius: 100px;
+        width: 80%;
+        padding: 10px 0;
+        margin: 1% 0;
+        background-color: $fondoCompleto;
+        color: $colorText;
+    }
+    & form fieldset textarea{
+        margin: 1% 0;
+        width: 80%;
+        height: 100px;
+        padding: 20px 20px;
+        border-radius: 50px;
+        background-color: $fondoCompleto;
+        color: $colorText;
+        text-align: center;
+    }
+    @mixin btn{
+        margin: 10px auto;
+        width: 500px;
+        font-size:2rem;
+        font-family: $textH1;
+        background-color: $fondoCompleto;
+        border-radius: 10px;
+    }
+    .btn--default{
+        @include btn;
+    }
+    .btnUno :hover{
+        background-color: rgb(16, 92, 16);
+        color: white;
+    }
+    .btnDos :hover{
+        background-color: rgb(126, 22, 22);
+        color: white;
+    }
+
+}
+/*---------------------------------fin contacto------------------------*/

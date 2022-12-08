@@ -1,0 +1,129 @@
+/*-------------------------------------medias----------------------------------------------------*/
+@media (min-width: 320px) and  (max-width: 768px){
+    body{
+        height: 100vh;
+        header{
+            font-size: 1.2rem;
+            & .navbar{
+                box-shadow: none;
+                &  img{
+                    width: 50px;
+                    height: auto;
+                }
+            }
+        }
+        p{
+            font-size: 1rem;
+            line-height: normal;
+            margin: 3%;
+        }
+        h2{
+            font-size: 1.3rem;
+        }
+        h5{
+            font-size: 1.2rem;
+        }
+        main.inicio {
+            width: 90%;
+            & h1{
+                font-size: 2rem;
+            }
+            & img{
+                height: 200px;
+            }
+        }
+        section.inicio{
+            width: 90%;
+            margin-left: auto;
+        }
+        aside.inicio{
+            & .carousel{
+                width: 90%;
+                height: auto;
+                margin: 1% 0;
+            }
+        }
+        .carrito-producto{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            background-color: $colorArt;
+        }
+        .carrito-producto-imagen{
+            width: 100px;
+            margin: auto;
+            padding-top: 10px;
+        }
+        .carrito-acciones{
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            margin: 2%;
+            font-size: 1rem;
+        }
+    }
+}
+@media (min-width: 320px) and  (max-width: 768px){
+    footer{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 320px) and  (max-width: 1200px){
+    main.inicio {
+        width: 90%;
+        & h1{
+            font-size: 2rem;
+        }
+        & img{
+            height: 200px;
+        }
+    }
+    section.inicio{
+        width: 90%;
+        margin-left: auto;
+    }
+
+    section.contacto{
+        width: 90%;
+        height: auto;
+        & #contacto{
+            margin-top: 10%;
+        }
+        & form fieldset input{
+            width: 90%;
+        }
+        & form fieldset textarea{
+            width: 90%;
+        }
+        & .btn--default{
+            width: 250px;
+        }
+        & .btnDos{
+            margin-bottom: 10%;
+        }
+    }
+}
+@media (min-width: 625px) and  (max-width: 960px){
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2%;
+    }
+}
+@media (min-width: 320px) and  (max-width: 625px){
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 2%;
+    }
+}
+/*-------------------------------------fin medias-------------------------------------------------*/
+
+
